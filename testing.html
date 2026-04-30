@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Wave Squad — тестирование</title>
+  <link rel="stylesheet" href="./style.css"/>
+  <style>
+    .frame{border:1px solid var(--line);border-radius:18px;overflow:hidden}
+    .mock{padding:14px}
+    .mock .row{display:flex;gap:10px;flex-wrap:wrap}
+    .pill{padding:8px 10px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.02);color:var(--muted)}
+  </style>
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  <header class="nav glass">
+    <div class="brand">Wave Squad</div>
+    <nav>
+      <a href="./index.html">Главная</a>
+      <a href="./features.html">Возможности</a>
+      <a href="./updates.html">Обновления</a>
+      <a class="active" href="./testing.html">Тестирование</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero glass">
+      <h1>Тестирование</h1>
+      <p class="lead">Превью воркер‑панели (демо‑макет, без админки).</p>
+    </section>
+
+    <section class="frame glass mock">
+      <div class="row" style="justify-content:space-between;align-items:center">
+        <div class="pill">Worker Panel</div>
+        <div class="pill">Glass UI + Constellation</div>
+      </div>
+      <div class="grid" style="margin-top:12px">
+        <div class="card glass">
+          <h3>Профиль</h3>
+          <div class="lead" style="font-size:14px">Статус: роботяга • Тег: wave • Балик: 1200⭐</div>
+          <div class="cta" style="margin-top:10px">
+            <span class="btn">Запросить вывод</span>
+            <span class="btn ghost">Апгрейд</span>
+          </div>
+        </div>
+        <div class="card glass">
+          <h3>Топ</h3>
+          <div class="changelog">
+            <div class="item">#1 @alpha — профит 9999 — рефы 42</div>
+            <div class="item">#2 @beta — профит 5300 — рефы 17</div>
+            <div class="item">#3 @gamma — профит 1200 — рефы 3</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./particles.js"></script>
+</body>
+</html>
+
